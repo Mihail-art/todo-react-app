@@ -50,7 +50,7 @@ app.post("/api/tasks", (req, res) => {
   };
 
   tasks.push(newTask);
-  saveTasks(); // ✅ збереження
+  saveTasks();
   res.status(201).json(newTask);
 });
 
@@ -70,7 +70,7 @@ app.put("/api/tasks/:id", (req, res) => {
     status: status || tasks[index].status,
   };
 
-  saveTasks(); // ✅ збереження
+  saveTasks();
   res.json(tasks[index]);
 });
 
@@ -78,7 +78,7 @@ app.put("/api/tasks/:id", (req, res) => {
 app.delete("/api/tasks/:id", (req, res) => {
   const { id } = req.params;
   tasks = tasks.filter((t) => t.id != id);
-  saveTasks(); // ✅ збереження
+  saveTasks();
   res.json({ message: "Task deleted" });
 });
 
