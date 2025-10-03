@@ -1,0 +1,13 @@
+.footer p {
+    margin: 0;
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: auto;
+}
+
+.footer {
+    padding: 16px 0;
+    border-top: 1px solid #BABABA;
+    margin-top: 50px;
+}

@@ -1,0 +1,136 @@
+.Todo-text-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Todo-text-block .Header-link {
+    display: block;
+    text-align: center;
+}
+
+.Todo-text-block p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 30px;
+}
+
+.Todo-text-block h2 {
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #333333;
+}
+
+span {
+    color: #007BFF;
+}
+
+.Todo-items .Item-head {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #007BFF;
+    border-bottom: 1px solid #007BFF;
+} 
+
+p {
+    margin-bottom: 30px;
+}
+
+.Todo-items .block {
+    background: #F8F8F8;
+    border: 1px solid #D8E8FF;
+    box-shadow: 0px 0px 12px rgba(13, 110, 253, 0.25);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.Todo-items .block p {
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.Todo-items .block h5 {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.Todo-items .block h5 img {
+    margin-right: 13px;
+}
+
+.todo-status {
+    margin: 0 !important;
+}
+
+.todo-status span {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 70px;
+}
+
+.todo-status .bg-warning {
+    color: #ffffff !important;
+    background: #FF8001 !important;
+    border: 1px solid #FF8001;
+}
+
+.todo-status .bg-secondary {
+    color: #ffffff !important;
+    background: #E2E2E2 !important;
+    border: 1px solid #DADADA;
+}
+
+.todo-status .bg-success {
+    color: #ffffff !important;
+    background: #008000 !important;
+    border: 1px solid #008000;
+}
+
+.todo-status .bg-primary {
+    color: #008000 !important;
+    background: #CBE9CB !important;
+
+    border: 1px solid #008000;
+}
+
+.todo-status .bg-danger {
+    color: #ffffff !important;
+    background: #FF0000 !important;
+    border: 1px solid #FF0000;
+}
+
+.Button-todo .Button {
+    padding: 0 !important;
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.Button-todo .Button:last-of-type {
+    margin-right: 0;
+}
+
+.Button-todo {
+    width: max-content;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+

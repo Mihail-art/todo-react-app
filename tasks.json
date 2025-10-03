@@ -1,0 +1,16 @@
+[
+  {
+    "id": 3,
+    "title": "Таска 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima est neque consectetur voluptatem ipsam alias quod quasi sit minus ipsa dolorem facere, beatae nesciunt expedita magnam nihil. Repudiandae nisi debitis enim mollitia ipsa qui, exercitationem voluptatum labore corrupti veniam repellat!",
+    "difficulty": "easy",
+    "status": "done"
+  },
+  {
+    "id": 4,
+    "title": "Таска 4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima est neque consectetur voluptatem ipsam alias quod quasi sit minus ipsa dolorem facere, beatae nesciunt expedita magnam nihil. Repudiandae nisi debitis enim mollitia ipsa qui, exercitationem voluptatum labore corrupti veniam repellat!",
+    "difficulty": "medium",
+    "status": "inactive"
+  }
+]

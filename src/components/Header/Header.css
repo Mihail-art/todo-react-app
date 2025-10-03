@@ -1,0 +1,41 @@
+.Header-logo {
+  max-width: 80px;
+  height: auto;
+}
+
+.Header-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #BABABA;
+}
+
+.Header-main-link {
+  display: block;
+  height: 100%;
+}
+
+.Header-header span {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.Header-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 38px;
+  background-color: #007BFF;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  border: none;
+}
+
+.Header-link:hover {
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+}
