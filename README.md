@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 📌 ToDo App (React + Node.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Простий ToDo-додаток з можливістю створення, редагування, видалення та зміни статусу задач.  
+Проект складається з **фронтенду на React** та **бекенду на Express (Node.js)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Функціонал
+- Створення нових задач з назвою, описом та складністю (легка / середня / важка).
+- Встановлення статусів: **Активна**, **Не активна**, **Виконана**.
+- Редагування існуючих задач.
+- Видалення задач.
+- Відображення задач у категоріях: всі, активні, неактивні, виконані.
+- Збереження задач у JSON-файлі (`tasks.json`) на сервері.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Структура проекту
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+todo-app/
 
-### `npm test`
+│
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+├── public/ # Публічні файли
 
-### `npm run build`
+├── src/ # React-код (фронтенд)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+│ ├── components/ # Компоненти (Header, Footer, ToDoList і т.д.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+│ ├── images/ # Іконки та картинки
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+│ ├── App.js # Головний компонент
 
-### `npm run eject`
+│ ├── index.js # Точка входу React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+│ └── styles/ # CSS-стилі
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+├── server.js # Express сервер (бекенд)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+├── tasks.json # JSON-файл збереження задач
 
-## Learn More
+└── package.json # Конфігурація npm (фронтенд)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ Встановлення та запуск
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. Клонування репозиторію
+```bash
+git clone https://github.com/Mihail-art/todos-react.git
+cd todos-react
+````
+### 2. Встановлення залежностей (фронтенд)
+```bash
+npm install
+````
+3. Запуск фронтенду (React)
+```bash
+npm start
+````
+Проект буде доступний за адресою: http://localhost:3000
 
-### Analyzing the Bundle Size
+5. Запуск бекенду (Node.js)
+У новій консолі:
+```bash
+node server.js
+````
+Сервер працює на http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📡 API (бекенд)
+1. GET /api/tasks — отримати всі задачі
+2. POST /api/tasks — створити нову задачу
+3. PUT /api/tasks/:id — редагувати задачу
+4. DELETE /api/tasks/:id — видалити задачу
 
-### Making a Progressive Web App
+## Задачі зберігаються у файлі tasks.json.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🛠 Використані технології
+1. React 18
+2. Bootstrap 5
+3. Axios
+4. Node.js + Express
+5. CORS
+6. JSON як база даних
