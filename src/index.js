@@ -18,7 +18,6 @@ function App() {
       <main className="main">
         <div className="container">
           <Routes>
-            {/* Головна */}
             <Route
               path="/"
               element={
@@ -37,10 +36,8 @@ function App() {
               }
             />
 
-            {/* Логін */}
             <Route path="/login" element={<LoginPage />} />
 
-            {/* ToDo тільки для авторизованих */}
             <Route
               path="/todo-list"
               element={
