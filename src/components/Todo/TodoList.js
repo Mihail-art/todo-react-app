@@ -7,7 +7,6 @@ import "./TodoList.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// Компонент однієї задачі (картка)
 function TaskCard({ task, onDelete, onEdit }) {
   return (
     <div className="col-xl-4 col-md-6 col-sm-12 mb-3">
@@ -70,7 +69,6 @@ function TaskCard({ task, onDelete, onEdit }) {
   );
 }
 
-// Головний компонент
 function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [editing, setEditing] = useState(false);
@@ -138,7 +136,6 @@ function TodoList() {
             </h2>
             <p>Нижче наведено повний список задач для вас, котрі потрібно виконати</p>
 
-            {/* Кнопка створення */}
             <div className="Todo-link-block d-flex justify-content-center text-center text-center">
               <a
                 href="#"
@@ -162,7 +159,6 @@ function TodoList() {
           </div>
         </div>
 
-        {/* Modal */}
         <div className="modal fade" id="taskModal" tabIndex="-1" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
@@ -264,7 +260,6 @@ function TodoList() {
         </div>
       </div>
 
-      {/* Tasks list */}
       {tasks.length > 0 && (
         <div className="Todo-items mt-4">
           <div className="row">
@@ -280,7 +275,6 @@ function TodoList() {
         </div>
       )}
 
-      {/* Активні */}
       {tasks.filter((t) => t.status === "active").length > 0 && (
         <div className="Todo-items mt-4">
           <div className="row">
@@ -298,7 +292,6 @@ function TodoList() {
         </div>
       )}
 
-      {/* Не активні */}
       {tasks.filter((t) => t.status === "inactive").length > 0 && (
         <div className="Todo-items mt-4">
           <div className="row">
@@ -316,7 +309,6 @@ function TodoList() {
         </div>
       )}
 
-      {/* Виконані */}
       {tasks.filter((t) => t.status === "done").length > 0 && (
         <div className="Todo-items mt-4">
           <div className="row">
