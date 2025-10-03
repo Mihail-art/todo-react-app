@@ -14,8 +14,8 @@
 }
 
 input:focus {
-  outline: none !important;       /* прибирає стандартний outline */
-  box-shadow: none !important;    /* прибирає підсвітку */
+  outline: none !important;       
+  box-shadow: none !important;   
 }
 
 .forms h2 {
