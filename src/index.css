@@ -15,15 +15,15 @@ code {
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Забезпечує, що контейнер займає всю висоту вікна */
+  min-height: 100vh;
 }
 
 .main {
-  flex: 1 0 auto; /* Дозволяє головному вмісту розтягуватися, але не стискатися більше ніж потрібно */
+  flex: 1 0 auto;
 }
 
 .footer {
-  flex-shrink: 0; /* Попереджає стискання футера */
+  flex-shrink: 0;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
